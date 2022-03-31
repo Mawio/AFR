@@ -1,0 +1,27 @@
+<! -- https://assetstore.unity.com/packages/tools/gui/responsive-webgl-template-117308 -->
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>OWMS Viewer (0.3321)</title>
+	<link rel="icon" type="image/png" href="TemplateData/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="TemplateData/favicon-16x16.png" sizes="16x16">
+  </head>
+  <body style="background: #73b6f3; text-align: center; margin: 0; padding: 0">
+    <canvas id="unity-canvas" style="width: 3840px; height: 2160px; margin: 0; padding: 0; background: #79B9F4"></canvas>
+    <script src="Build/WebGL Build.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/WebGL Build.data.unityweb",
+        frameworkUrl: "Build/WebGL Build.framework.js.unityweb",
+        codeUrl: "Build/WebGL Build.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Mawio",
+        productName: "OWMS Viewer",
+        productVersion: "0.3321",
+      });
+    </script>
+    <script src="TemplateData/responsive.js"></script>
+  </body>
+</html>
